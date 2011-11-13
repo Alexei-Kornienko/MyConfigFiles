@@ -69,10 +69,9 @@ xterm*|rxvt*)
 esac
 
 function git_status {
-	printf "%$(tput cols)s\n"|tr ' ' '='
 	GIT_REPO=".git"
-	#pwd
 	if [ -d $GIT_REPO ]; then
+		printf "%$(tput cols)s\n"|tr ' ' '='
 		git status
 		printf "%$(tput cols)s\n"|tr ' ' '='
 	fi
