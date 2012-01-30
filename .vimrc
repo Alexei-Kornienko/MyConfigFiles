@@ -2,7 +2,8 @@ set nocompatible
 set ruler
 set showcmd
 set incsearch
-set autochdir " always switch to the current file directory
+" Commentend due to NERDTree plugin
+"set autochdir " always switch to the current file directory
 set backspace=indent,eol,start " make backspace a more flexible
 set nobackup " don't make backup files
 set clipboard+=unnamed " share windows clipboard
@@ -20,4 +21,4 @@ set completeopt+=longest
 
 nmap <silent> <A-Left> :BufSurfBack<CR>
 nmap <silent> <A-Right> :BufSurfForward<CR>
-nmap <S-Space> <C-x><C-o>
+nmap <silent> <C-p> :NERDTreeToggle<CR>
