@@ -5,6 +5,9 @@
 	autocrlf = input
 	safecrlf = true
 	editor = vim
+
+[merge]
+	tool = meld
 [alias]
 	co = checkout
 	ci = commit
