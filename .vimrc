@@ -27,6 +27,8 @@ filetype plugin indent on
 set ofu=syntaxcomplete#Complete
 set completeopt+=longest
 
+nnoremap * *N
+
 nmap <silent> <A-Left> :BufSurfBack<CR>
 nmap <silent> <A-Right> :BufSurfForward<CR>
 nmap <silent> <C-p> :NERDTreeToggle<CR>
