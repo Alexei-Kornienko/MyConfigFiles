@@ -18,3 +18,7 @@
 	dump = cat-file -p
 [http]
 	sslverify = false
+[mergetool]
+	keepBackup = false
+[color]
+	ui = true

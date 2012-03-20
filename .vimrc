@@ -29,6 +29,8 @@ set completeopt+=longest
 
 nnoremap * *N
 
+call pathogen#infect()
+
 nmap <silent> <A-Left> :BufSurfBack<CR>
 nmap <silent> <A-Right> :BufSurfForward<CR>
 nmap <silent> <C-p> :NERDTreeToggle<CR>
