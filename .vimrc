@@ -11,12 +11,6 @@ set directory=~/.vim/tmp
 
 set clipboard+=unnamed " share windows clipboard
 set fileformats=unix,dos,mac " support all three, in this order
-"set tabstop=4 
-" ruby development settings
-set softtabstop=2
-set tabstop=2 
-set shiftwidth=2
-set expandtab
 
 if &t_Co > 2 || has("gui_running")
   syntax on
@@ -30,6 +24,21 @@ set completeopt+=longest
 nnoremap * *N
 
 call pathogen#infect()
+
+function! <SID>SetMainDefaults()
+  set softtabstop=2
+  set tabstop=2
+  set shiftwidth=2
+  set expandtab
+endfunction
+      
+call <SID>SetMainDefaults() 
+
+call vimprj#init()
+
+function! g:vimprj#dHooks['SetDefaultOptions']['main_options'](dParams)
+  call <SID>SetMainDefaults()
+endfunction
 
 nmap <silent> <A-Left> :BufSurfBack<CR>
 nmap <silent> <A-Right> :BufSurfForward<CR>
