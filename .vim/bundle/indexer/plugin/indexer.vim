@@ -1024,6 +1024,7 @@ function! <SID>IndexerInfo()
    let l:iFilesCnt = 0
    let l:iFilesNotFoundCnt = 0
    let l:sFilesForCtags = ""
+
    for l:lProjects in g:vimprj#dFiles[ g:vimprj#iCurFileNum ]["projects"]
       let l:dCurProject = s:dProjFilesParsed[ l:lProjects.file ]["projects"][ l:lProjects.name ]
 

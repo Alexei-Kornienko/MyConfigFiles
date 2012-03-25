@@ -21,6 +21,8 @@ filetype plugin indent on
 set ofu=syntaxcomplete#Complete
 set completeopt+=longest
 
+nnoremap * *N
+
 call pathogen#infect()
 
 function! <SID>SetMainDefaults()
