@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/php_refactoring"]
+	path = .vim/bundle/php_refactoring
+	url = /home/alex/Projects/php_refactoring/
