@@ -1,0 +1,2 @@
+#!/bin/bash
+curl -s http://whatthecommit.com | grep "<p>" | cut -c 4-
