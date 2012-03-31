@@ -1,6 +1,7 @@
 [user]
 	name = Alexei Kornienko
 	email = alexei.kornienko@gmail.com
+	signingkey = FC850AD5
 [core]
 	autocrlf = input
 	safecrlf = true
