@@ -1,0 +1,3 @@
+#!/bin/bash
+
+phpcs --standard=GameloftStandard --extensions=php --ignore=library/Zend/*,AnimController.php -n . > report.txt
