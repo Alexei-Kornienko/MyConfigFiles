@@ -8,6 +8,7 @@ set backspace=indent,eol,start " make backspace a more flexible
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
+set previewheight=2
 
 set clipboard+=unnamed " share windows clipboard
 set fileformats=unix,dos,mac " support all three, in this order
