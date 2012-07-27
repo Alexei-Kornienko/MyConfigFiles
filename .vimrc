@@ -10,8 +10,10 @@ set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
 set previewheight=2
 
-set clipboard+=unnamed " share windows clipboard
+set clipboard+=unnamedplus " share windows clipboard
 set fileformats=unix,dos,mac " support all three, in this order
+
+set mouse=n
 
 if &t_Co > 2 || has("gui_running")
   syntax on
