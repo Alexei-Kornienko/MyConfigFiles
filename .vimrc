@@ -46,3 +46,4 @@ endfunction
 nmap <silent> <A-Left> :BufSurfBack<CR>
 nmap <silent> <A-Right> :BufSurfForward<CR>
 nmap <silent> <C-p> :NERDTreeToggle<CR>
+nmap <silent> <C-f>o :FufFile<CR>
