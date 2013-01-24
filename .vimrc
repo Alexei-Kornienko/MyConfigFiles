@@ -2,9 +2,9 @@ set nocompatible
 set ruler
 set showcmd
 set incsearch
-" Commentend due to NERDTree plugin
-"set autochdir " always switch to the current file directory
 set backspace=indent,eol,start " make backspace a more flexible
+
+call pathogen#infect()
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
@@ -17,6 +17,8 @@ set mouse=n
 
 if &t_Co > 2 || has("gui_running")
   syntax on
+  set background=dark
+  colorscheme solarized
   set hlsearch
 endif
 
@@ -26,12 +28,10 @@ set completeopt+=longest
 
 nnoremap * *N
 
-call pathogen#infect()
-
 function! <SID>SetMainDefaults()
-  set softtabstop=2
-  set tabstop=2
-  set shiftwidth=2
+  set softtabstop=4
+  set tabstop=4
+  set shiftwidth=4
   set expandtab
 endfunction
       
