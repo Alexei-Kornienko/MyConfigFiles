@@ -80,6 +80,21 @@ function git_status {
 
 PROMPT_COMMAND=git_status
 
+up () {
+    if [ -z $1 ]; then
+        cd ..
+    elif [ $1 -gt 0 ]; then
+        let count=0
+        while [ $count -lt $1 ]; do
+            cd ..
+            let count=count+1
+        done
+    else
+        echo "Argument must be a positive integer."
+    fi
+    pwd
+}
+
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
