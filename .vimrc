@@ -57,3 +57,5 @@ nmap <silent> <A-Right> :BufSurfForward<CR>
 nmap <silent> <C-p> :NERDTreeToggle<CR>
 nmap <silent> <F8> :TagbarToggle<CR>
 nmap <silent> <C-f>o :FufFile<CR>
+nmap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+vmap <Space> zf
