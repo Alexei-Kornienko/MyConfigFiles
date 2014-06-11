@@ -43,6 +43,11 @@ function! g:vimprj#dHooks['SetDefaultOptions']['main_options'](dParams)
   call <SID>SetMainDefaults()
 endfunction
 
+
+let g:jedi#popup_on_dot = 0
+let g:jedi#popup_select_first = 0
+let g:jedi#show_call_signatures = 0
+
 nmap <silent> <A-Left> :BufSurfBack<CR>
 nmap <silent> <A-Right> :BufSurfForward<CR>
 nmap <silent> <C-p> :NERDTreeToggle<CR>
