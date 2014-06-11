@@ -18,6 +18,7 @@ set mouse=n
 if &t_Co > 2 || has("gui_running")
   syntax on
   set background=dark
+  let g:solarized_diffmode="high"
   colorscheme solarized
   set hlsearch
 endif
@@ -43,6 +44,9 @@ function! g:vimprj#dHooks['SetDefaultOptions']['main_options'](dParams)
   call <SID>SetMainDefaults()
 endfunction
 
+let g:plantuml_executable_script='java -jar ~/bin/plantuml.jar'
+
+let NERDTreeIgnore = ['\.pyc$']
 
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
