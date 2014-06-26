@@ -46,7 +46,7 @@ endfunction
 
 let g:plantuml_executable_script='java -jar ~/bin/plantuml.jar'
 
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', 'egg']
 
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
