@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-PATH+=":$HOME/bin"
+PATH+=":$HOME/bin:$HOME/go/bin/"
 #export PATH=$(PATH)
 export EDITOR=vim
 
