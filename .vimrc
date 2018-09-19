@@ -46,7 +46,7 @@ endfunction
 
 let g:plantuml_executable_script='java -jar ~/bin/plantuml.jar'
 
-let NERDTreeIgnore = ['\.pyc$', 'egg']
+let NERDTreeIgnore = ['\.pyc$', 'egg', '__pycache__']
 
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
@@ -62,3 +62,5 @@ nmap <silent> <F8> :TagbarToggle<CR>
 nmap <silent> <C-f>o :FufFile<CR>
 nmap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vmap <Space> zf
+
+let g:syntastic_python_checkers=['flake8', 'python3']
