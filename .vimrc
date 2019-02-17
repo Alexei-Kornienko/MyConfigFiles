@@ -64,3 +64,4 @@ nmap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vmap <Space> zf
 
 let g:syntastic_python_checkers=['flake8', 'python3']
+let g:rustfmt_autosave = 1
