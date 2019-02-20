@@ -4,6 +4,9 @@ set showcmd
 set incsearch
 set backspace=indent,eol,start " make backspace a more flexible
 
+let g:pymode_python = 'python3'
+let g:jedi#force_py_version=3
+
 call pathogen#infect()
 
 set backupdir=~/.vim/backup
@@ -50,7 +53,7 @@ let NERDTreeIgnore = ['\.pyc$', 'egg', '__pycache__']
 
 let g:jedi#popup_on_dot = 0
 let g:jedi#popup_select_first = 0
-let g:jedi#show_call_signatures = 0
+let g:jedi#show_call_signatures = 1
 
 autocmd FileType qf wincmd J
 
