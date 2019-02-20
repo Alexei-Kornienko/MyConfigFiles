@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/jedi-vim"]
 	path = .vim/bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "/Users/alexei.kornienko/.vim/bundle/rust.vim"]
+	path = /Users/alexei.kornienko/.vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
