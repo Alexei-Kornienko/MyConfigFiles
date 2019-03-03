@@ -22,7 +22,6 @@ if &t_Co > 2 || has("gui_running")
   syntax on
   set background=dark
   let g:solarized_diffmode="high"
-  colorscheme solarized
   set hlsearch
 endif
 
