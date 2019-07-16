@@ -66,4 +66,10 @@ nmap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
 vmap <Space> zf
 
 let g:syntastic_python_checkers=['flake8', 'python3']
+
 let g:rustfmt_autosave = 1
+let g:syntastic_rust_checkers = ['cargo']
+let g:lsc_server_commands = {'rust': 'rls'}
+" Use all the defaults (recommended):
+let g:lsc_auto_map = {'defaults': v:true, 'Completion': 'omnifunc'}
+autocmd CompleteDone * silent! pclose
