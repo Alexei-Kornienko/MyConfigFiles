@@ -22,3 +22,6 @@
 [submodule ".vim/bundle/vim-lsc"]
 	path = .vim/bundle/vim-lsc
 	url = https://github.com/natebosch/vim-lsc.git
+[submodule ".vim/bundle/rust.vim"]
+	path = .vim/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
